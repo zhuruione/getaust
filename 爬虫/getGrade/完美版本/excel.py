@@ -15,7 +15,7 @@ def get_student_info():
     n=0
     for r in range(2, rows):
         n+=1
-        if n<5000:#stus.cell(r,5).value=='物联网工程2001班':
+        if n<100:#stus.cell(r,5).value=='物联网工程2001班':
             stu=Student(stus.cell(r, 6).value,stus.cell(r, 2).value[-6:])
             stu.classname=stus.cell(r,5).value
             allstu.append(stu)
